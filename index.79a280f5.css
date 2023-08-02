@@ -1,0 +1,262 @@
+.flex-container a:hover, .flex-slider a:hover {
+  outline: none;
+}
+
+.slides, .slides > li, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+.flexslider .slides > li {
+  -webkit-backface-visibility: hidden;
+  display: none;
+}
+
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+.flexslider .slides:after {
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  display: block;
+}
+
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+* html .flexslider .slides {
+  height: 1%;
+}
+
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+.flexslider {
+  zoom: 1;
+  -webkit-box-shadow: "" 0 1px 4px #0003;
+  -moz-box-shadow: "" 0 1px 4px #0003;
+  -o-box-shadow: "" 0 1px 4px #0003;
+  box-shadow: "" 0 1px 4px #0003;
+  background: #fff;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  margin: 0 0 60px;
+  position: relative;
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.flexslider .slides img {
+  -moz-user-select: none;
+  height: auto;
+}
+
+.flex-viewport {
+  -o-transition: all 1s ease;
+  max-height: 2000px;
+  transition: all 1s;
+}
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+.carousel li {
+  margin-right: 5px;
+}
+
+.flex-direction-nav {
+  height: 0;
+}
+
+.flex-direction-nav a {
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+  color: #000c;
+  text-shadow: 1px 1px #ffffff4d;
+  -o-transition: all .3s ease-in-out;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  display: block;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+}
+
+.flex-direction-nav a:before {
+  content: "";
+  color: #000c;
+  text-shadow: 1px 1px #ffffff4d;
+  font-family: flexslider-icon;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: "";
+}
+
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+.flex-direction-nav .flex-next {
+  text-align: right;
+  right: -50px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: .7;
+  left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: .7;
+  right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+  filter: alpha(opacity= 0);
+  cursor: default;
+  z-index: -1;
+  opacity: 0 !important;
+}
+
+.flex-pauseplay a {
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
+  color: #000;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  overflow: hidden;
+}
+
+.flex-pauseplay a:before {
+  content: "";
+  font-family: flexslider-icon;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+.flex-pauseplay a.flex-play:before {
+  content: "";
+}
+
+.flex-control-nav {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+}
+
+.flex-control-nav li {
+  zoom: 1;
+  margin: 0 6px;
+  display: inline;
+}
+
+.flex-control-paging li a {
+  cursor: pointer;
+  text-indent: -9999px;
+  -o-box-shadow: inset 0 0 3px #0000004d;
+  background: #00000080;
+  border-radius: 20px;
+  width: 11px;
+  height: 11px;
+  display: block;
+  box-shadow: inset 0 0 3px #0000004d;
+}
+
+.flex-control-paging li a:hover {
+  background: #000000b3;
+}
+
+.flex-control-paging li a.flex-active {
+  cursor: default;
+  background: #000000e6;
+}
+
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+.flex-control-thumbs li {
+  float: left;
+  width: 25%;
+  margin: 0;
+}
+
+.flex-control-thumbs img {
+  opacity: .7;
+  cursor: pointer;
+  -moz-user-select: none;
+  -o-transition: all 1s ease;
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+  display: block;
+}
+
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+@media screen and (width <= 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+/*# sourceMappingURL=index.79a280f5.css.map */
